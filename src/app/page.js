@@ -80,7 +80,7 @@ export default function Home() {
           className={s_logo}
           height={300}
           width={200}
-          src="/img/logo.png"
+          src="./img/logo.png"
         />
 
         <div className={s_nav_section}>
