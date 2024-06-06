@@ -145,7 +145,7 @@ export default function Home() {
 
           <div className="flex flex-row font-serif justify-center space-x-4 text-sm h-10 w-[20%] absolute top-12 right-10">
             <a
-              href="/files/cv.pdf"
+              href="./files/cv.pdf"
               target="blank"
               className="hover:underline hover:cursor-pointer"
             >
