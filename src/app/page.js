@@ -118,7 +118,7 @@ export default function Home() {
           </div>
           <br></br>
 
-          <div className="text-justify tracking-wide text-sm font-serif w-[85%]">
+          <div className="text-justify tracking-wide  font-serif w-[85%]">
             A la suite de mes deux années d'alternance chez AEW Europe,
             j'aimerais mettre à votre service l'ensemble des compétences
             acquises en tant que Business Analyst orienté BI. Référent
@@ -130,20 +130,16 @@ export default function Home() {
             évolution.
           </div>
 
-          <div className="w-[70%] h-[20%] justify-center mt-4  border-black    grid grid-cols-8">
+          <div className="w-[80%] h-[20%] justify-center mt-4  border-black    grid grid-cols-9">
             <span>&#128233;</span>
-            <span className="-ml-[75%] mt-1.5 text-xs">
-              : ryan02.nm@gmail.com
-            </span>
+            <span className="-ml-[75%]">: ryan02.nm@gmail.com</span>
             <span>&#128241;</span>
-            <span className="-ml-[75%] mt-1.5 text-xs">: 06 16 12 02 30</span>
+            <span className="-ml-[75%]">: 06 16 12 02 30</span>
             <span>&#128664;</span>
-            <span className="-ml-[75%] mt-1.5 text-xs">
-              : Ile de france / Hauts de france
-            </span>
+            <span className="-ml-[75%]">: Ile de france / Hauts de france</span>
           </div>
 
-          <div className="flex flex-row font-serif justify-center space-x-4 text-sm h-10 w-[20%] absolute top-12 right-10">
+          <div className="flex flex-row font-serif justify-center space-x-4  h-10 w-[20%] absolute top-12 right-10">
             <a
               href="./files/cv.pdf"
               target="blank"
@@ -151,9 +147,13 @@ export default function Home() {
             >
               Mon CV
             </a>
-            {/* <span className="hover:underline hover:cursor-pointer">
-              Ma lettre de motivation
-            </span> */}
+            <a
+              target="blank"
+              href="https://www.linkedin.com/in/ryan-ngae-5aa3582a1/"
+              className="hover:underline hover:cursor-pointer"
+            >
+              Mon linkedin
+            </a>
           </div>
         </div>
 
@@ -165,8 +165,13 @@ export default function Home() {
           <span className=" text-black font-serif text-3xl">COMPETENCES</span>
           <br />
           <div className="text-slate-600 text-xs italic mt-2">
-            Compétences issue du référentiel présent sur le site du CIGREF
-            (version 2022)
+            <a
+              target="blank"
+              href="https://www.cigref.fr/nomenclature-des-profils-metiers-du-si-version-2022"
+            >
+              Compétences issue du référentiel présent sur le site du CIGREF
+              (version 2022)
+            </a>
           </div>
 
           <div className="flex flex-row mx-auto space-x-7  mt-6 h-[17%] w-[50%]">
@@ -202,7 +207,7 @@ export default function Home() {
           className=" w-full h-[22%] pt-10 space-y-6  pl-12 "
         >
           <span className=" text-black font-serif text-3xl">EXPERIENCES</span>
-          <div className="flex flex-col h-[90%] space-y-4 overflow-y-auto">
+          <div className="flex flex-col h-[90%]  no-scrollbar space-y-4 overflow-y-auto">
             {experiences.map((item, index) => {
               return <Experience key={index} exp={item}></Experience>;
             })}
@@ -217,12 +222,17 @@ export default function Home() {
           <span className=" text-black font-serif text-3xl">SAVOIR ETRE</span>
           <br />
           <div className="text-slate-600 text-xs italic mt-2">
-            Savoir être issue du référentiel présent sur le site de pôle emploi
-            (ROME 4.0)
+            <a
+              target="blank"
+              href="https://www.francetravail.org/files/live/sites/peorg/files/documents/Statistiques-et-analyses/Open-data/ROME/ROME_Presentation.pdf"
+            >
+              Savoir être issue du référentiel présent sur le site de pôle
+              emploi (ROME 4.0)
+            </a>
           </div>
 
-          <table className="mt-5 text-center h-[80%] w-[85%] overflow-y-auto text-xs ">
-            <tr className="bg-upjv-2 text-xs text-white font-normal">
+          <table className="mt-5 text-center h-[80%] w-[85%] overflow-y-auto  ">
+            <tr className="bg-upjv-2 text-white font-normal">
               <th>Savoir être</th>
               <th>Description</th>
             </tr>
@@ -247,7 +257,12 @@ export default function Home() {
           <span className=" text-black font-serif text-3xl">FORMATIONS</span>
 
           <div className="text-slate-600 text-xs italic mt-2">
-            Liste des acquis des formations selon le site France competences
+            <a
+              target="blank"
+              href="https://www.francecompetences.fr/recherche/rncp/31471/"
+            >
+              Liste des acquis des formations selon le site France competences.
+            </a>
           </div>
 
           <span
@@ -276,14 +291,14 @@ export default function Home() {
         <div id="projets" className="relative w-full h-[14%] pt-10  pl-12 ">
           <span className=" text-black font-serif text-3xl">PROJETS</span>
 
-          <div className="flex flex-row items-center justify-center space-x-10 h-[15%] mt-10  w-[100%] ">
+          <div className="flex flex-row items-center justify-center space-x-10 h-[18%] mt-10  w-[100%] ">
             {projets.map((item, index) => {
               return (
                 <div
                   key={index}
                   id={index}
                   onClick={display_project}
-                  className="bg-slate-100 border-2 border-black w-[20%] flex items-center text-center justify-center h-full hover:scale-110 text-black text-xs"
+                  className="bg-slate-100 border-2 border-black w-[25%] flex items-center text-center justify-center h-full hover:scale-110 text-black "
                 >
                   {item.titre}
                 </div>

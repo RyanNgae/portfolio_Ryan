@@ -37,11 +37,12 @@ export default function Competence({ comp }) {
         </span>
       </div>
       <div className={s_comp}>
-        <ul className="list-disc text-xs pl-8 space-y-2 pt-2">
+        <ul className="list-disc pl-8 space-y-2 pt-2">
           {comp.competences.map((item, index) => {
             return <li key={index}>{item}</li>;
           })}
         </ul>
+        <br></br>
       </div>
     </div>
   );

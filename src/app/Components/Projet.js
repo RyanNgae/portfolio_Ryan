@@ -8,14 +8,16 @@ export default function Projet({ projet }) {
       </div>
 
       <Image
-        className="w-[13em] h-[9em]  mt-7 rounded-lg mx-auto"
-        height={200}
-        width={200}
+        className="w-[15em] h-[12em]  mt-7 rounded-lg mx-auto"
+        height={300}
+        width={250}
         src={"./img/" + projet.illustration}
       />
 
-      <div className="w-[60%] mt-5 mx-auto text-center">
-        <span className="text-xs text-justify">{projet.description}</span>
+      <div className="w-full text-justify mt-8 mx-auto ">
+        <span className=" font-serif tracking-wide text-justify">
+          {projet.description}
+        </span>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Experience({ exp }) {
   return (
-    <div className="w-[80%] pl-4 h-[20em] relative border border-upjv-2 ">
+    <div className="w-[80%] pl-4 h-[25em] relative border border-upjv-2 ">
       <div className="w-[45%] h-20 mt-4 flex flex-row space-x-3  ">
         <Image
           className="w-18 h-20"
@@ -20,7 +20,7 @@ export default function Experience({ exp }) {
         </div>
       </div>
 
-      <div className="mt-6 text-xs underline font-semibold">
+      <div className="mt-4 text-xs underline font-semibold">
         {/* {exp.description} */}
         Détail de l'expérience :
       </div>
@@ -44,7 +44,7 @@ export default function Experience({ exp }) {
       </div>
 
       {exp.isExperience ? (
-        <table className="absolute top-16 right-4 text-center h-[60%] w-[22%] text-xs ">
+        <table className="absolute top-16 right-4 text-center h-[70%] w-[22%] text-xs ">
           <tr className="bg-upjv text-xs text-upjv-2 font-normal">
             <th>Competences acquises</th>
           </tr>
@@ -59,6 +59,7 @@ export default function Experience({ exp }) {
       ) : (
         <></>
       )}
+      <br></br>
     </div>
   );
 }
